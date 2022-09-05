@@ -1,0 +1,86 @@
+.form {
+  width: 520px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__wrapper {
+  max-width: 800px;
+}
+
+.form__field {
+  position: relative;
+}
+
+.form__field label {
+  display: block;
+}
+
+.form__field input,
+.form__field select {
+  height: 40px;
+  width: 100%;
+  background-color: #0000;
+  border: 1px solid #ffc090;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.form__field input:focus,
+.form__field input:active,
+.form__field select:focus,
+.form__field select:active {
+  border-width: 2px;
+  outline: none;
+}
+
+.form__field textarea {
+  width: 100%;
+  background-color: #0000;
+  border: 1px solid #ffc090;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.form__field textarea:focus,
+.form__field textarea:active {
+  border-width: 2px;
+  outline: none;
+}
+
+.form__field .form__error__msg {
+  color: #fd3939;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+}
+
+.form__field.show .form__error__msg {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form__submit {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.form__button {
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  background-color: #7fb77e;
+  border: 1px solid #b1d7b4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form__button.show {
+  opacity: 1;
+  visibility: visible;
+}

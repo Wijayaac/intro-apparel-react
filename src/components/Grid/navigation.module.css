@@ -1,0 +1,26 @@
+.navigation {
+  justify-content: center;
+  gap: 30px;
+  margin: 25px 0;
+  display: flex;
+}
+
+.navigation__btn {
+  cursor: pointer;
+  background-color: #b1d7b4;
+  border: 1px solid #ffc090;
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
+.navigation__btn:disabled {
+  cursor: not-allowed;
+}
+
+.navigation__btn__number.active {
+  background-color: #7fb77e;
+}
+
+.navigation__btn__number:not(:last-child) {
+  margin-right: 5px;
+}
